@@ -1,4 +1,4 @@
-⚠️⚠️ A Basic InfoStealer Malware(UNDER DEVELOPMENT)
+## ⚠️⚠️ A Basic InfoStealer Malware(UNDER DEVELOPMENT)
 
 UPCOMING FEATURES:
 1. Getting Basic User Info  ✅ 
