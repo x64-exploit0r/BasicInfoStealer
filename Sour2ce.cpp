@@ -4,22 +4,35 @@
 
 using namespace std;
 
+#define pos " [+] "
+
+
 void GetSystemInfo() {
 
-	char user[UNLEN + 1];
-	char ComputerName[MAX_COMPUTERNAME_LENGTH + 1];
+	char username[UNLEN + 1];
+	char ComputerName[UNLEN + 1];
+	char CurrentDirectory[UNLEN + 1];
+	LPSTR Date;
 
-	DWORD compsize;
-	DWORD usrlen = UNLEN + 1;
+	DWORD size = UNLEN + 1;
+	DWORD ComputerNameSize = MAX_COMPUTERNAME_LENGTH + 1;
+	DWORD CurrentDirectorySize = UNLEN + 1;
+	DWORD DateSize;
+
+	GetUserNameA(username, &size);
+	GetComputerNameA(ComputerName, &ComputerNameSize);
+	GetCurrentDirectoryA(CurrentDirectorySize, CurrentDirectory);
+	GetDateFormatA(LOCALE_USER_DEFAULT, DATE_SHORTDATE, NULL, "ddd',' MMM dd yy", &Date, DateSize);
+	
+
+	cout << pos << "GOT USERNAME - " << username << endl;
+	cout << pos << "GOT COMPUTER NAME - " << ComputerName << endl;
+	cout << pos << "GOT CURRENT DIRECTORY - " << CurrentDirectory<< endl;
+	cout << pos << "GOT DATE - "<< Date << endl;
+	
 
 
-	GetUserNameA(user, &usrlen);
-	cout << "[+] Username: " << user << endl;
-
-	GetComputerNameA(ComputerName, &compsize);
-	cout << "[+] Computer Name: " << ComputerName << endl;
 }
-
 
 int main() {
 

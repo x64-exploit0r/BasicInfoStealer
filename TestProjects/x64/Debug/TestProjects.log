@@ -1,2 +1,9 @@
 ﻿  Sour2ce.cpp
-  TestProjects.vcxproj -> E:\Starting_C\TestProjects\x64\Debug\TestProjects.exe
+E:\Starting_C\BasicInfoStealer\Sour2ce.cpp(25,2): error C2664: 'int GetDateFormatA(LCID,DWORD,const SYSTEMTIME *,LPCSTR,LPSTR,int)': cannot convert argument 5 from 'char (*)[200]' to 'LPSTR'
+  E:\Starting_C\BasicInfoStealer\Sour2ce.cpp(25,80):
+  Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\datetimeapi.h(33,1):
+  see declaration of 'GetDateFormatA'
+  E:\Starting_C\BasicInfoStealer\Sour2ce.cpp(25,2):
+  while trying to match the argument list '(unsigned long, int, int, const char [17], char (*)[200], DWORD)'
+  
