@@ -1,4 +1,0 @@
-﻿  Sour2ce.cpp
-E:\Starting_C\BasicInfoStealer\Sour2ce.cpp(16,8): warning C4101: 'Date': unreferenced local variable
-E:\Starting_C\BasicInfoStealer\Sour2ce.cpp(21,8): warning C4101: 'DateSize': unreferenced local variable
-  TestProjects.vcxproj -> E:\Starting_C\BasicInfoStealer\x64\Debug\TestProjects.exe
